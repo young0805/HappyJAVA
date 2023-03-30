@@ -1,4 +1,4 @@
-public class CharExam2 {
+public class CharExam02 {
     public static void main(String[] args) {
         char c1 = 'a';
 
