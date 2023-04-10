@@ -39,7 +39,23 @@ public class UserMain {
                 }else{ // 찾지 못했다.
                     System.out.println("수정할 회원 정보가 없습니다");
                 }
+            } else if (menuId == 4) {
+                String email = userUI.inputEmail();
+                int findIndex = -1;
+                for(int i=0; i<users.size(); i++){
+                    User u = users.get(i);
+                    if(u.getEmail().equals(email)){
+                        findIndex = i;
+                        break;
             }
         }
+                if(findIndex != -1){
+                    users.remove(findIndex);
+                    System.out.println("삭제하였습니다.");
+                }else{
+                    System.out.println("삭제 할 회원 정보가 없습니다.");
+                }
+            }
+            }
     }
 }

@@ -14,6 +14,7 @@ public class UserUI {
         System.out.println("1. 회원 등록");
         System.out.println("2. 회원 목록 보기");
         System.out.println("3. 회원 정보 수정하기");
+        System.out.println("4. 회원 정보 삭제하기");
         System.out.println("5. 종료");
 
         int menuId = -1;
